@@ -1,0 +1,15 @@
+.dorpdown-item {
+  cursor: pointer;
+}
+i.fa {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.dorpdown-title.active i.transit {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}

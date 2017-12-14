@@ -1,0 +1,105 @@
+.mapboxgl-ctrl-compass {
+display: none !important;
+}
+#coord-button{
+    position: absolute;
+    z-index: 2;
+    top: 75px;
+    left: 10px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    width: 30px;
+    font-size: smaller;
+    padding: 0px;
+      box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);
+}
+
+.mapInfoArea{
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    background-color: #ffffff;
+    width: 220px;
+    height: 100%;
+}
+#hideSideBar{
+    background-color: #ffffff;
+    border: 1px solid #1bd2fb;
+    color: #1bd2fb;
+    border-radius: 17px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+#hideSideBar:hover{
+    background-color: #1bd2fb;
+    border: 1px solid #1bd2fb;
+    color: #ffffff;
+    border-radius: 17px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+}
+#submitChange{
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+}
+#mapinfoform{
+    height:80%;
+    overflow: scroll;
+}
+.input-label{
+    display: inline-block;
+    width: 30%;
+    font-size: 12px;
+}
+.input-area{
+    padding:0 5px;
+    width:62%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    color: #555;
+    outline: none;
+}
+.input-area:visited,.input-area:hover,.input-area:active{
+    border: 1px solid #0bafe6;
+}
+
+.mapboxgl-popup-content h5{
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.layer-control-container {
+    position: fixed;
+    left: 50px;
+    top: 100px;
+    z-index: 1;
+    box-shadow: 0 0 3px #222;
+}
+
+/* 右键菜单样式 暂时不用，因为ipad不支持 */
+/*.conext-menu-container {
+    position: absolute;
+    min-width: 60px;
+    padding: 5px;
+    background-color: #fff;
+    visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #333;
+    z-index: 2;
+}
+
+.conext-menu-container ul {
+    list-style: none;
+}
+
+.conext-menu-container p {
+    margin: 0;
+    padding: 0;
+}*/

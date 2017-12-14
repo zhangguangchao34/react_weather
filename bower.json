@@ -1,0 +1,22 @@
+{
+  "name": "gagoframe",
+  "description": "",
+  "main": "webpack.config.js",
+  "license": "ISC",
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.1",
+    "unslider": "~2.0.3",
+    "cryptojslib": "~3.1.2"
+  }
+}

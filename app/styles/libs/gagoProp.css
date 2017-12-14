@@ -1,0 +1,125 @@
+/*属性信息*/
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../fonts/iconfont.eot');
+    /* IE9 */
+    src: url('../fonts/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.gago-pro-icon-iconfontcha:before {
+    content: "\e652";
+}
+
+.gago-pro-sx-toolbar {
+    position: relative;
+    width: 200px;
+    z-index: 36;
+    /*right: 30px;*/
+    /*top: -20px;*/
+    color: #fff;
+    background-color: #1b1e40;
+    font-size: 12px;
+}
+
+.gago-pro-topheader {
+    height: 40px;
+    background-color: #353b65;
+    line-height: 40px;
+}
+
+.gago-pro-topheader .name {
+    margin-left: 15px;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.gago-pro-topheader i {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gago-pro-sx-toolbar .gago-pro-shadowdiv ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gago-pro-sx-toolbar .gago-pro-shadowdiv ul li {
+    border-bottom: 1px dashed #2f3339;
+    margin: 0;
+    padding: 0;
+}
+
+.gago-pro-sx-toolbar .gago-pro-shadowdiv ul li .gago-pro-sxname {
+    float: left;
+    text-align: right;
+    text-indent: 15px;
+}
+
+.gago-pro-sx-toolbar .gago-pro-shadowdiv ul li .gago-pro-sxcontent {
+    text-align: left;
+    margin: 10px;
+    text-indent: 10px;
+}
+
+.gago-pro-sx-toolbar .gago-pro-shadowdiv ul li .gago-pro-sxinputedit {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: 0 0;
+    color: white;
+    text-align: left;
+    margin: 0;
+    width: 80px;
+    height: 15px;
+    -moz-border-radius: 3px;
+    /* Gecko browsers */
+    -webkit-border-radius: 3px;
+    /* Webkit browsers */
+    border-radius: 3px;
+}
+
+.gago-pro-triangle {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-color: #1b1e40 transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+}
+
+.gago-pro-ItemInPopup{
+    line-height:20px;
+    height: 20px;
+    box-shadow:1px 1px #ccc;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:80px;
+    display:inline-block;
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.leaflet-popup {
+    z-index: 99999999;
+}
+

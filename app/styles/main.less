@@ -1,0 +1,325 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+//清除浮动处理
+.clearfix {
+  display: block;
+  zoom: 1;
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+//向右浮动
+.fr{
+  float: right;
+}
+//向左浮动
+.fl {
+  float: left;
+}
+
+
+
+
+/*************************************
+*
+*      暂时写在main样式里面，
+*        有时间应该挑出来
+*
+**************************************/
+
+/*侧边栏样式重新定义*/
+.leaflet-menu {
+    overflow: auto !important;
+}
+
+.leaflet-menu-contents #khhfst, .leaflet-menu-contents #chstzmj, .leaflet-menu-contents #htzmj {
+    width: 100%;
+    height: 40px;
+    background-color: #353b65;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 500;
+    text-indent: 22px;
+}
+
+.leaflet-menu-contents #khhfst {
+    height: 60px;
+    line-height: 60px;
+}
+
+.leaflet-menu-contents h3 {
+    color: ghostwhite;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.leaflet-menu-contents h3.tdmj {
+    position: absolute;
+    top: 70px;
+    margin-left: 12px;
+}
+
+.leaflet-menu-contents h3.sscz {
+    position: absolute;
+    top: 124px;
+    margin-left: 12px;
+}
+
+.leaflet-menu-contents #areaOfSelect, .leaflet-menu-contents #landTypeOfSelect {
+    background: 0 0;
+    padding: 4px;
+    width: 63%;
+    margin: 15px 5% 15px auto;
+    text-align: center;
+    height: 28px;
+    border-radius: 4px;
+    border-color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    outline: none;
+    float: right;
+}
+
+.leaflet-menu-contents #areaOfSelect:hover, .leaflet-menu-contents #landTypeOfSelect:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.leaflet-menu-contents #areaOfSelect option {
+    color: #000;
+    margin: 15px 0 0;
+    text-align: left;
+    background-color: azure;
+    line-height: 0.8;
+    overflow-y: scroll;
+}
+
+.leaflet-menu-contents #areaOfSelect option textarea {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.leaflet-menu-contents .areaInfo, .leaflet-menu-contents .theInfo {
+    display: block;
+    color: #fff;
+    width: 100%;
+    /*margin-top: 86px;*/
+    text-indent: 15px;
+    font-weight: 500;
+}
+
+.leaflet-menu-contents .theInfo {
+    margin-top: 0px;
+}
+
+.sumPercent {
+    BORDER-COLLAPSE: collapse;
+    margin-bottom: 15px;
+}
+
+.sumPercent span {
+    display: block;
+    color: #fff;
+}
+
+#weatherTable {
+    /*border: 1px solid #fff;*/
+    color: white;
+    text-align: left;
+    width: 100%;
+    height: 120px
+}
+.leaflet-popup-content{
+
+    width: 230px;
+}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{
+    background-color: rgb(27, 30, 64);
+}
+/*气象加载图片*/
+#loadingtq2{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    top:36%;
+    left:44%;
+    /*margin-left:-150px;*/
+    /*text-align:center;*/
+    /*padding:7px 0 0 0;*/
+    font:bold 11px Arial, Helvetica, sans-serif;
+}
+@-webkit-keyframes anticlockwiseRotate{
+    0%{transform:rotate(0deg);}
+    /*25%{transform:rotate(90deg);}*/
+    /*50%{transform:rotate(180deg);}*/
+    /*75%{transform:rotate(270deg);}*/
+    100%{transform:rotate(360deg);}
+}
+
+#loadingtq2{
+    -webkit-animation: anticlockwiseRotate 400ms infinite;
+    /* 设置放大中心为元素中心 放大1.5倍*/
+    transform-origin: 50% 50%;
+    /*transform:scale(1.5);*/
+}
+
+/* 海拔高度图例 */
+.tin-legend {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    background-color: #353b65;
+    padding: 15px;
+}
+.tin-legend-bar {
+    height: 15px;
+    display: inline-block;
+}
+
+.tin-legend-labels p {
+    color: #fff;
+    height: 25px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.tin-legend-labels {
+    width: 100%;
+    height: 30px;
+}
+
+.tin-legend-labels ul {
+    overflow: hidden;
+}
+
+.tin-legend-labels ul li {
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* 时间轴 图例 ndvi图表 */
+.ndvi-legend-timeline {
+    width: 320px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 0;
+    background: #1b1e40;
+    border-radius: 5px;
+    box-shadow: 2px 3px 6px #222;
+}
+
+/* 时间轴 */
+.map-overlay-inner {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.current-date {
+    line-height: 30px;
+    height: 30px;
+    margin: 0;
+    color: #fff;
+    display: inline-block;
+}
+
+.map-overlay-inner input {
+    width: 100%;
+}
+
+.ndvi-line {
+    width: 100%;
+    height: 200px;
+}
+
+/* 播放暂停按钮 */
+.play-btn {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #ddd;
+    border-radius: 3px;
+    float: right;
+    text-align: center;
+}
+
+.play-btn:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+    /* 图例 */
+
+    .legend{
+        padding: 15px 5px;
+    }
+    .legend div {
+        color: #fff;
+    }
+
+    .legend-label a {
+        float: left;
+        padding: 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    .legend .bar {
+        height: 10px;
+        display: inline-block;
+    }
+    /* 图层名称图例 */
+
+    .legend-container {
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        /*width: 150px;*/
+        background-color: #222;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+        border-radius: 3px;
+        padding: 8px;
+    }
+
+    .legend-container .legend li {
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .legend-container .legend li:hover {
+        background-color: #eee;
+    }

@@ -1,0 +1,51 @@
+.leaflet-control-slidemenu{
+    cursor: pointer;
+}
+
+.leaflet-menu{
+    position: absolute;
+    background-color: rgb(27, 30, 64);
+    overflow: auto;
+    cursor: default;
+    z-index: 9999;
+}
+
+.leaflet-menu::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+    background: rgb(27, 30, 64);
+}
+
+.leaflet-menu::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: rgb(27, 30, 64);
+}
+
+.leaflet-menu-close-button{
+    background-color: transparent;
+    border: none;
+    font-size: 14pt;
+    color: #777;
+    cursor: pointer;
+}
+
+/*关闭打开按钮的css*/
+.gagolink{
+    background: url("../../image/left.png") no-repeat;
+    background-size:cover;
+    position: absolute;
+    right: -10px;
+    /*top: 300px;*/
+    float: right;
+    height: 70px !important;
+    width: 13px !important;
+}
+.gagoclose{
+    background: url("../../image/right.png") no-repeat;
+    background-size:cover;
+    position: absolute;
+    /*top: 300px;*/
+    float: right;
+    height: 70px !important;
+    width: 13px !important;
+}
